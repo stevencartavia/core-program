@@ -134,6 +134,7 @@ RSA (Rivest-Shamir-Adleman) is popular for public-key encryption due to several 
 6.	Established Research: RSA's mathematical foundation and security assumptions have been extensively researched and analyzed, providing a high level of confidence in its reliability.
 
 
+
 ### Hash Functions, Merkle Trees
 
 #### Hash Functions
