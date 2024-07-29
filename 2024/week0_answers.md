@@ -7,11 +7,13 @@
 A zero-knowledge proof is a way of proving the validity of a statement without revealing the statement itself. The “prover” is the party trying to prove a claim, while the “verifier” is responsible for validating the claim.
 
 2. What are the principles of soundness, completeness, and zero-knowledge?
+
 Soundness: The Prover can only convince the Verifier if the statement is true. If the input is invalid, it is theoretically impossible to fool the zero-knowledge protocol to return “true”.
 Completeness: If the input is valid, the zero-knowledge protocol always returns “true”. Hence, if the underlying statement is true, and the prover and verifier act honestly, the proof can be accepted.
 Zero-Knowledge: The Verifier learns nothing about a statement beyond its validity or falsity (they have “zero-knowledge” of the statement). This requirement also prevents the verifier from deriving the original input (the statement’s content) from the proof.
 
 3. What distinguishes interactive from non-interactive proofs?
+
 Interactive proofs require multiple rounds of communication between the prover and verifier. Even if a verifier was convinced of a prover’s honesty, the proof would be unavailable for independent verification (computing a new proof required a new set of messages between the prover and verifier).
 Non-interactive proofs, they only interact once. Where the prover and verifier have a shared key. This allows the prover to demonstrate their knowledge of some information without providing the information itself. The prover passes the secret information to a special algorithm to compute a zero-knowledge proof. This proof is sent to the verifier, who checks that the prover knows the secret information using another algorithm. Once a proof is generated, it is available for anyone else (with access to the shared key and verification algorithm) to verify.
 
