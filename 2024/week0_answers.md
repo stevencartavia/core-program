@@ -3,6 +3,7 @@
 ### A Primer for Zero Knowledge Proofs
 **🤔 Consider the following:**
 1. What are Zero-Knowledge Proofs?
+
 A zero-knowledge proof is a way of proving the validity of a statement without revealing the statement itself. The “prover” is the party trying to prove a claim, while the “verifier” is responsible for validating the claim.
 
 2. What are the principles of soundness, completeness, and zero-knowledge?
