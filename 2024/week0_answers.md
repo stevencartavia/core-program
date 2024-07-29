@@ -79,12 +79,14 @@ Non-interactive proofs, they only interact once. Where the prover and verifier h
 Summarize each of the following concepts in a few sentences:
 
 1. Three-Colouring Graph problem with Hats
+
 The Three-Colouring Graph problem with Hats is a protocol designed to assign three different frequency bands to cellular radio towers in a network to avoid interference. The network is represented by a graph, where vertices are towers and edges indicate potential interference. The challenge is to color the graph with three colors (frequencies) such that no two adjacent vertices share the same color, a problem known to be NP-complete.
 
 To verify the solution without revealing it, Google colors the graph and covers each vertex with a hat. The network owner can then randomly select an edge and check the colors of the connected vertices. If the vertices share the same color, Google is lying. If not, the owner repeats the process multiple times to increase confidence in the solution. This method ensures the protocol is zero-knowledge, meaning the owner learns nothing about the solution's specifics while verifying its validity.
 
 
 2. Ali Baba’s Cave analogy
+
 Peggy knows a secret word to open a magic door in a cave shaped like a ring. Victor, who is outside the cave, wants to verify that Peggy knows the word without learning the word himself.
 
 Peggy chooses one of two paths (A or B) and Victor, after Peggy enters, randomly selects a path for her to exit from. If Peggy knows the secret word, she can always return from the path Victor names. If she doesn’t know the word, she only has a 50% chance of guessing correctly, so consistently succeeding in multiple trials would strongly suggest she knows the word.
@@ -92,6 +94,7 @@ Peggy chooses one of two paths (A or B) and Victor, after Peggy enters, randomly
 This setup ensures Peggy’s knowledge is verified without revealing the secret word to Victor or anyone observing the process. However, if the process is recorded or if a coin flip is used visibly to choose the exit path, it could potentially expose the method or trick, making it less secure in terms of privacy.
 
 3. The difference between interactive and non-interactive proofs
+
 Interactive proofs involve a back-and-forth exchange between a prover and a verifier. The prover tries to convince the verifier of a statement’s truth by answering a series of questions or challenges. Non-interactive proofs, on the other hand, do not require this ongoing interaction. Instead, the prover generates a single proof that the verifier can check independently, often using a common reference string or a setup phase. Essentially, interactive proofs involve real-time communication, while non-interactive proofs are more like a one-time submission.
 
 ### Modular Arithmetic
