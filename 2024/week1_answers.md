@@ -102,6 +102,7 @@ The primary difference between symmetric and asymmetric encryption lies in how t
 In practice, asymmetric encryption is often used to exchange symmetric keys securely, which are then used for the actual data encryption.
 
 
+
 2. Can you briefly explain how AES (Advanced Encryption Standard) works?
 
 AES (Advanced Encryption Standard) is a widely used symmetric encryption algorithm.
@@ -118,6 +119,7 @@ AES (Advanced Encryption Standard) is a widely used symmetric encryption algorit
 •	AddRoundKey: The block is XORed with a round key derived from the original key.
 5.	 Final Round: The final round omits the MixColumns step but includes the SubBytes, ShiftRows, and AddRoundKey steps.
 The combination of these operations ensures that the encrypted output is highly secure and resistant to various types of cryptographic attacks.
+
 
 
 3. What makes RSA a popular choice for public-key encryption? 
