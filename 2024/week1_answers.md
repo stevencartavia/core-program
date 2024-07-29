@@ -107,20 +107,19 @@ The primary difference between symmetric and asymmetric encryption lies in how t
 2. Can you briefly explain how AES (Advanced Encryption Standard) works?
 
 AES (Advanced Encryption Standard) is a widely used symmetric encryption algorithm.
-1.	Key Length: AES supports three key lengths: 128, 192, or 256 bits. The length of the key affects the security and the number of rounds of processing the data undergoes.
-2.	  Block Size: AES encrypts data in fixed-size blocks of 128 bits (16 bytes).
-3.	  Rounds: AES performs multiple rounds of encryption, depending on the key length:
-1.	10 rounds for a 128-bit key
-2.	12 rounds for a 192-bit key
-3.	14 rounds for a 256-bit key
-4.	  Steps in Each Round:
+- Key Length: AES supports three key lengths: 128, 192, or 256 bits. The length of the key affects the security and the number of rounds of processing the data undergoes.
+- Block Size: AES encrypts data in fixed-size blocks of 128 bits (16 bytes).
+- Rounds: AES performs multiple rounds of encryption, depending on the key length:
+- 10 rounds for a 128-bit key
+- 12 rounds for a 192-bit key
+- 14 rounds for a 256-bit key
+- Steps in Each Round:
 •	SubBytes: Each byte of the block is replaced with a corresponding byte from a fixed substitution table (S-box).
 •	ShiftRows: Rows of the block are shifted cyclically to the left.
 •	MixColumns: Columns of the block are mixed to provide diffusion, which helps spread the influence of each bit over many parts of the block.
 •	AddRoundKey: The block is XORed with a round key derived from the original key.
-5.	 Final Round: The final round omits the MixColumns step but includes the SubBytes, ShiftRows, and AddRoundKey steps.
+- Final Round: The final round omits the MixColumns step but includes the SubBytes, ShiftRows, and AddRoundKey steps.
 The combination of these operations ensures that the encrypted output is highly secure and resistant to various types of cryptographic attacks.
-
 
 
 3. What makes RSA a popular choice for public-key encryption? 
