@@ -89,17 +89,18 @@ component main = hashProof();
 
 The primary difference between symmetric and asymmetric encryption lies in how the use keys for encryption and decryption.
 -	Symmetric Encryption: 
--	Single Key: Uses the same key for both encryption and decryption.
--	Speed: Generally faster and more efficient for encrypting large amounts of data.
--	Key Distribution: The key must be kept secret and shared securely between the communicating parties. If the key is compromised, so is the encrypted data.
--	Example Algorithms: AES (Advanced Encryption Standard), DES (Data Encryption Standard).
+    -	Single Key: Uses the same key for both encryption and decryption.
+    -	Speed: Generally faster and more efficient for encrypting large amounts of data.
+    -	Key Distribution: The key must be kept secret and shared securely between the communicating parties. If the key is compromised, so is the encrypted data.
+    -	Example Algorithms: AES (Advanced Encryption Standard), DES (Data Encryption Standard).
+
 
 -	Asymmetric Encryption: 
--	Key Pair: Uses a pair of keys – a public key for encryption and a private key for decryption.
--	Security: Enhances security since the private key does not need to be shared; only the public key is distributed. Only the corresponding private key can decrypt data encrypted with the public key.
--	Speed: Generally slower than symmetric encryption and often used for smaller amounts of data or for securely exchanging symmetric keys.
--	Example Algorithms: RSA (Rivest-Shamir-Adleman), ECC (Elliptic Curve Cryptography).
-In practice, asymmetric encryption is often used to exchange symmetric keys securely, which are then used for the actual data encryption.
+    -	Key Pair: Uses a pair of keys – a public key for encryption and a private key for decryption.
+    -	Security: Enhances security since the private key does not need to be shared; only the public key is distributed. Only the corresponding private key can decrypt data encrypted with the public key.
+    -	Speed: Generally slower than symmetric encryption and often used for smaller amounts of data or for securely exchanging symmetric keys.
+    -	Example Algorithms: RSA (Rivest-Shamir-Adleman), ECC (Elliptic Curve Cryptography).
+    In practice, asymmetric encryption is often used to exchange symmetric keys securely, which are then used for the actual data encryption.
 
 
 
