@@ -28,7 +28,7 @@ Non-interactive proofs, they only interact once. Where the prover and verifier h
   ** 0 and 1 are neither prime nor composite **
   ** All even numbers except 2 are composite numbers **
   ** 4 is the smallest composite number **
-  
+
   - Greatest Common Divisors (GCD)
   
   The Greatest Common Divisor (GCD) is the largest integer that divides one, two or more numbers. 
@@ -113,12 +113,15 @@ If the results of the third and fourth calculations match, they follow a "group 
 Consider the cyclic group $(Z_{12}, +\ mod\ 12)$, commonly referred to as the "additive group of integers modulo 12". Address the following points:
 
 1. What does the term 'generator' mean?
+
 It’s an element that can be used to produce every element of the group through the group operation. For this cyclic group, a generator is an element that, when combined with itself (using the operation, which is addition in this case) enough times, can produce all other elements of the group.
 
 2. Can you find a generator for this group?
+
 The element 1 is a generator because if you add 1 to itself repeatedly (modulo 12), you get all the elements of the group.
 
 3. Are there other generators for this group? If yes, what are they?
+
 The elements 5, 7 and 11 are also generators.
 
 
